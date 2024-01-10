@@ -13,5 +13,14 @@ function () {
     const numeroGiocatore = Math.floor(Math.random() * 6) + 1;
     console.log('Random Giocatore:', numeroGiocatore);
 
-    
+    //SE il numero del computer è superiore a quello del giocatore. Computer vince.
+    if (numeroComputer > numeroGiocatore) {
+        console.log('ha vinto il Computer!');
+    //ALTRIMENTI il numero del computer è inferiore a quello del giocatore. Giocatore vince.  
+    } else if (numeroComputer < numeroGiocatore) {
+        console.log('Hai vinto!');
+    //ALTRIMENTI il numero del giocatore è uguale a quello del giocatore. Pareggio.
+    } else {numeroComputer === numeroGiocatore
+        console.log('Avete giocato lo stesso numero!');
+    }
 })
