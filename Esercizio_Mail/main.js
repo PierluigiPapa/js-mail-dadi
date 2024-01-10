@@ -6,3 +6,16 @@ let accessoConsentito = false;
 
 //Costante per prompt per inserire l'email
 const emailUtente = prompt ('Inserisci la tua mail?');
+
+//Condizione per stabilire se l'email è presente nella lista degli accessi consentiti
+for (let listEmail = 0; listEmail < listaEmailUtenti.length; listControlEmail++) {
+    //SE è presente nella lista degli accessi, la stampa è positiva
+    // ALTRIMENTI la stampa è negativa
+      if (listaEmailUtenti[listEmail] === emailUtente) {
+        accessoConsentito = true;
+        //La ricerca si interrompe quando si trova la corrispondenza
+        break;
+      }
+  };
+
+  
