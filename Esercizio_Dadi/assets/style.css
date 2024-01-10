@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main {
+    background-color: #2b73c4ff;
+    height: 100vh;
+}
