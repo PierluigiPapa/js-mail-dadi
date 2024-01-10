@@ -8,7 +8,7 @@ let accessoConsentito = false;
 const emailUtente = prompt ('Inserisci la tua mail?');
 
 //Condizione per stabilire se l'email è presente nella lista degli accessi consentiti
-for (let listEmail = 0; listEmail < listaEmailUtenti.length; listControlEmail++) {
+for (let listEmail = 0; listEmail < listaEmailUtenti.length; listEmail++) {
     //SE è presente nella lista degli accessi, la stampa è positiva
     // ALTRIMENTI la stampa è negativa
       if (listaEmailUtenti[listEmail] === emailUtente) {
@@ -18,4 +18,9 @@ for (let listEmail = 0; listEmail < listaEmailUtenti.length; listControlEmail++)
       }
   };
 
-  
+//Condizione per stabilire se l'accesso sarà consentito o meno
+if (accessoConsentito === false) {
+    console.log('Accesso non consentito');
+  } else {
+    console.log('Accesso consentito');
+  }
